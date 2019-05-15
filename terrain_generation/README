@@ -1,0 +1,5 @@
+To compile :
+g++ main.cpp --std=c++17
+
+To start :
+./a.out source_image_path output_file terrain_max_height bloc_size
