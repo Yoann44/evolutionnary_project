@@ -1,0 +1,273 @@
+{
+ "id": 1,
+ "body": {
+  "part": [
+   {
+    "id": "Core",
+    "type": "CoreComponent",
+    "root": true,
+    "orientation": 0
+   },
+   {
+    "id": "Back",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 1
+   },
+   {
+    "id": "Back2",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 0
+   },
+   {
+    "id": "HipBackLeft",
+    "type": "ActiveHinge",
+    "root": false,
+    "orientation": 2
+   },
+   {
+    "id": "BackKneeLeft",
+    "type": "ActiveHinge",
+    "root": false,
+    "orientation": 2
+   },
+   {
+    "id": "BackLowerLegLeft",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 0
+   },
+   {
+    "id": "HipBackRight",
+    "type": "ActiveHinge",
+    "root": false,
+    "orientation": 2
+   },
+   {
+    "id": "BackUpperLegRight",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 1
+   },
+   {
+    "id": "Front",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 1
+   },
+   {
+    "id": "Front2",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 2
+   },
+   {
+    "id": "HipFrontLeft",
+    "type": "ActiveHinge",
+    "root": false,
+    "orientation": 2
+   },
+   {
+    "id": "FrontUpperLegLeft",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 1
+   },
+   {
+    "id": "FKL",
+    "type": "ActiveHinge",
+    "root": false,
+    "orientation": 2
+   },
+   {
+    "id": "FrontLowerLegLeft",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 0
+   }
+  ],
+  "connection": [
+   {
+    "src": "Core",
+    "dest": "Back",
+    "srcSlot": 2,
+    "destSlot": 0
+   },
+   {
+    "src": "Back",
+    "dest": "Back2",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "Back2",
+    "dest": "HipBackLeft",
+    "srcSlot": 2,
+    "destSlot": 0
+   },
+   {
+    "src": "HipBackLeft",
+    "dest": "BackKneeLeft",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "BackKneeLeft",
+    "dest": "BackLowerLegLeft",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "Back2",
+    "dest": "HipBackRight",
+    "srcSlot": 3,
+    "destSlot": 0
+   },
+   {
+    "src": "HipBackRight",
+    "dest": "BackUpperLegRight",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "Core",
+    "dest": "Front",
+    "srcSlot": 3,
+    "destSlot": 0
+   },
+   {
+    "src": "Front",
+    "dest": "Front2",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "Front2",
+    "dest": "HipFrontLeft",
+    "srcSlot": 3,
+    "destSlot": 0
+   },
+   {
+    "src": "HipFrontLeft",
+    "dest": "FrontUpperLegLeft",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "FrontUpperLegLeft",
+    "dest": "FKL",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "FKL",
+    "dest": "FrontLowerLegLeft",
+    "srcSlot": 1,
+    "destSlot": 0
+   }
+  ]
+ },
+ "brain": {
+  "neuron": [
+   {
+    "id": "BackKneeLeft-0",
+    "layer": "output",
+    "type": "oscillator",
+    "bodyPartId": "BackKneeLeft",
+    "ioId": 0,
+    "phaseOffset": 1.0,
+    "period": 1.9090908765792847,
+    "gain": 0.16292071342468262
+   },
+   {
+    "id": "Core-0",
+    "layer": "input",
+    "type": "simple",
+    "bodyPartId": "Core",
+    "ioId": 0,
+    "gain": 1.0
+   },
+   {
+    "id": "Core-1",
+    "layer": "input",
+    "type": "simple",
+    "bodyPartId": "Core",
+    "ioId": 1,
+    "gain": 1.0
+   },
+   {
+    "id": "Core-2",
+    "layer": "input",
+    "type": "simple",
+    "bodyPartId": "Core",
+    "ioId": 2,
+    "gain": 1.0
+   },
+   {
+    "id": "Core-3",
+    "layer": "input",
+    "type": "simple",
+    "bodyPartId": "Core",
+    "ioId": 3,
+    "gain": 1.0
+   },
+   {
+    "id": "Core-4",
+    "layer": "input",
+    "type": "simple",
+    "bodyPartId": "Core",
+    "ioId": 4,
+    "gain": 1.0
+   },
+   {
+    "id": "Core-5",
+    "layer": "input",
+    "type": "simple",
+    "bodyPartId": "Core",
+    "ioId": 5,
+    "gain": 1.0
+   },
+   {
+    "id": "FKL-0",
+    "layer": "output",
+    "type": "oscillator",
+    "bodyPartId": "FKL",
+    "ioId": 0,
+    "phaseOffset": 1.0,
+    "period": 0.46959510445594788,
+    "gain": 0.60000187158584595
+   },
+   {
+    "id": "HipBackLeft-0",
+    "layer": "output",
+    "type": "oscillator",
+    "bodyPartId": "HipBackLeft",
+    "ioId": 0,
+    "phaseOffset": 0.93181902170181274,
+    "period": 0.29829555749893188,
+    "gain": 0.34506016969680786
+   },
+   {
+    "id": "HipBackRight-0",
+    "layer": "output",
+    "type": "oscillator",
+    "bodyPartId": "HipBackRight",
+    "ioId": 0,
+    "phaseOffset": 1.0,
+    "period": 0.18366503715515137,
+    "gain": 0.92844688892364502
+   },
+   {
+    "id": "HipFrontLeft-0",
+    "layer": "output",
+    "type": "oscillator",
+    "bodyPartId": "HipFrontLeft",
+    "ioId": 0,
+    "phaseOffset": 0.092357315123081207,
+    "period": 0.47874200344085693,
+    "gain": 0.1986813098192215
+   }
+  ]
+ }
+}

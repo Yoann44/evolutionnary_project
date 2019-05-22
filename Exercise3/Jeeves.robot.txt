@@ -1,0 +1,34 @@
+0 CoreComponent Core 0
+	0 FixedBrick NeckBase 0
+		0 ActiveHinge Neck 0
+			0 FixedBrick Head 0
+				1 FixedBrick Ear1 0
+				2 FixedBrick Ear2 0
+	1 ActiveHinge TailBase 3
+		0 ParametricJoint Tail 0 0.1 30 0 
+			0 FixedBrick TailEnd 0
+				0 PassiveHinge TailSwing 0
+					0 FixedBrick TailMass 0
+	2 ActiveHinge Shoulder1 1
+		0 ActiveHinge Elbow1 3
+			0 FixedBrick Hand1 0
+	3 ActiveHinge Shoulder2 3
+		0 ActiveHinge Elbow2 1
+			0 FixedBrick Hand2 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

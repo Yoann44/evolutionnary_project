@@ -1,0 +1,411 @@
+{
+ "id": 1,
+ "body": {
+  "part": [
+   {
+    "id": "Core",
+    "type": "CoreComponent",
+    "root": true,
+    "orientation": 0
+   },
+   {
+    "id": "Front",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 1
+   },
+   {
+    "id": "Front2",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 3
+   },
+   {
+    "id": "HipFrontRight",
+    "type": "ActiveHinge",
+    "root": false,
+    "orientation": 2
+   },
+   {
+    "id": "myid1002",
+    "type": "ParametricJoint",
+    "root": false,
+    "evolvableParam": [
+     {
+      "paramValue": 0.06731695681810379
+     },
+     {
+      "paramValue": -31.732120513916016
+     },
+     {
+      "paramValue": 0.0
+     }
+    ],
+    "orientation": 2
+   },
+   {
+    "id": "FrontUpperLegRight",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 1
+   },
+   {
+    "id": "FrontKneeRight",
+    "type": "ActiveHinge",
+    "root": false,
+    "orientation": 2
+   },
+   {
+    "id": "myid1007",
+    "type": "ParametricJoint",
+    "root": false,
+    "evolvableParam": [
+     {
+      "paramValue": 0.083949804306030273
+     },
+     {
+      "paramValue": -34.707168579101562
+     },
+     {
+      "paramValue": 0.0
+     }
+    ],
+    "orientation": 3
+   },
+   {
+    "id": "FrontLowerLegRight",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 1
+   },
+   {
+    "id": "myid1005",
+    "type": "ActiveHinge",
+    "root": false,
+    "orientation": 3
+   },
+   {
+    "id": "myid1008",
+    "type": "IrSensor",
+    "root": false,
+    "orientation": 3
+   },
+   {
+    "id": "HipFrontLeft",
+    "type": "ActiveHinge",
+    "root": false,
+    "orientation": 2
+   },
+   {
+    "id": "FrontUpperLegLeft",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 2
+   },
+   {
+    "id": "FrontLowerLegLeft",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 1
+   },
+   {
+    "id": "myid1006",
+    "type": "ParametricJoint",
+    "root": false,
+    "evolvableParam": [
+     {
+      "paramValue": 0.081858932971954346
+     },
+     {
+      "paramValue": -18.53276252746582
+     },
+     {
+      "paramValue": 0.0
+     }
+    ],
+    "orientation": 2
+   },
+   {
+    "id": "myid1003",
+    "type": "ActiveHinge",
+    "root": false,
+    "orientation": 2
+   },
+   {
+    "id": "myid1004",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 1
+   }
+  ],
+  "connection": [
+   {
+    "src": "Core",
+    "dest": "Front",
+    "srcSlot": 3,
+    "destSlot": 0
+   },
+   {
+    "src": "Front",
+    "dest": "Front2",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "Front2",
+    "dest": "HipFrontRight",
+    "srcSlot": 2,
+    "destSlot": 0
+   },
+   {
+    "src": "HipFrontRight",
+    "dest": "myid1002",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "myid1002",
+    "dest": "FrontUpperLegRight",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "FrontUpperLegRight",
+    "dest": "FrontKneeRight",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "FrontKneeRight",
+    "dest": "myid1007",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "myid1007",
+    "dest": "FrontLowerLegRight",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "FrontUpperLegRight",
+    "dest": "myid1005",
+    "srcSlot": 3,
+    "destSlot": 0
+   },
+   {
+    "src": "myid1005",
+    "dest": "myid1008",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "Front2",
+    "dest": "HipFrontLeft",
+    "srcSlot": 3,
+    "destSlot": 0
+   },
+   {
+    "src": "HipFrontLeft",
+    "dest": "FrontUpperLegLeft",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "FrontUpperLegLeft",
+    "dest": "FrontLowerLegLeft",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "FrontLowerLegLeft",
+    "dest": "myid1006",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "myid1006",
+    "dest": "myid1003",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "myid1003",
+    "dest": "myid1004",
+    "srcSlot": 1,
+    "destSlot": 0
+   }
+  ]
+ },
+ "brain": {
+  "neuron": [
+   {
+    "id": "Core-0",
+    "layer": "input",
+    "type": "simple",
+    "bodyPartId": "Core",
+    "ioId": 0,
+    "gain": 1.0
+   },
+   {
+    "id": "Core-1",
+    "layer": "input",
+    "type": "simple",
+    "bodyPartId": "Core",
+    "ioId": 1,
+    "gain": 1.0
+   },
+   {
+    "id": "Core-2",
+    "layer": "input",
+    "type": "simple",
+    "bodyPartId": "Core",
+    "ioId": 2,
+    "gain": 1.0
+   },
+   {
+    "id": "Core-3",
+    "layer": "input",
+    "type": "simple",
+    "bodyPartId": "Core",
+    "ioId": 3,
+    "gain": 1.0
+   },
+   {
+    "id": "Core-4",
+    "layer": "input",
+    "type": "simple",
+    "bodyPartId": "Core",
+    "ioId": 4,
+    "gain": 1.0
+   },
+   {
+    "id": "Core-5",
+    "layer": "input",
+    "type": "simple",
+    "bodyPartId": "Core",
+    "ioId": 5,
+    "gain": 1.0
+   },
+   {
+    "id": "FrontKneeRight-0",
+    "layer": "output",
+    "type": "oscillator",
+    "bodyPartId": "FrontKneeRight",
+    "ioId": 0,
+    "phaseOffset": -0.90965765714645386,
+    "period": 1.816076397895813,
+    "gain": 0.48358872532844543
+   },
+   {
+    "id": "HipFrontLeft-0",
+    "layer": "output",
+    "type": "oscillator",
+    "bodyPartId": "HipFrontLeft",
+    "ioId": 0,
+    "phaseOffset": 0.015415643341839314,
+    "period": 0.60963541269302368,
+    "gain": 0.96624171733856201
+   },
+   {
+    "id": "HipFrontRight-0",
+    "layer": "output",
+    "type": "oscillator",
+    "bodyPartId": "HipFrontRight",
+    "ioId": 0,
+    "phaseOffset": 0.27522259950637817,
+    "period": 1.863018274307251,
+    "gain": 0.91055172681808472
+   },
+   {
+    "id": "myid1003-0",
+    "layer": "output",
+    "type": "oscillator",
+    "bodyPartId": "myid1003",
+    "ioId": 0,
+    "phaseOffset": -0.25236326456069946,
+    "period": 0.0,
+    "gain": 0.9161795973777771
+   },
+   {
+    "id": "myid1005-0",
+    "layer": "output",
+    "type": "sigmoid",
+    "bias": -0.59032410383224487,
+    "bodyPartId": "myid1005",
+    "ioId": 0,
+    "gain": 1.0
+   },
+   {
+    "id": "myid1008-0",
+    "layer": "input",
+    "type": "simple",
+    "bodyPartId": "myid1008",
+    "ioId": 0,
+    "gain": 1.0
+   }
+  ],
+  "connection": [
+   {
+    "src": "Core-0",
+    "dest": "myid1005-0",
+    "weight": 1.0563006401062012
+   },
+   {
+    "src": "Core-1",
+    "dest": "myid1005-0",
+    "weight": -2.4164848327636719
+   },
+   {
+    "src": "Core-2",
+    "dest": "myid1005-0",
+    "weight": -0.78184032440185547
+   },
+   {
+    "src": "Core-3",
+    "dest": "myid1005-0",
+    "weight": -1.3633104562759399
+   },
+   {
+    "src": "Core-4",
+    "dest": "myid1005-0",
+    "weight": 0.73800867795944214
+   },
+   {
+    "src": "Core-5",
+    "dest": "myid1005-0",
+    "weight": 0.082558184862136841
+   },
+   {
+    "src": "FrontKneeRight-0",
+    "dest": "myid1005-0",
+    "weight": 0.0
+   },
+   {
+    "src": "HipFrontLeft-0",
+    "dest": "myid1005-0",
+    "weight": 2.699638843536377
+   },
+   {
+    "src": "HipFrontRight-0",
+    "dest": "myid1005-0",
+    "weight": -0.75104928016662598
+   },
+   {
+    "src": "myid1003-0",
+    "dest": "myid1005-0",
+    "weight": -0.083438225090503693
+   },
+   {
+    "src": "myid1005-0",
+    "dest": "myid1005-0",
+    "weight": 0.0
+   },
+   {
+    "src": "myid1008-0",
+    "dest": "myid1005-0",
+    "weight": 0.0
+   }
+  ]
+ }
+}

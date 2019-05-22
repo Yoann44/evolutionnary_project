@@ -1,0 +1,19 @@
+0 CoreComponent Core 0
+	3 FixedBrick Front 1
+		2 ActiveHinge HipFrontLeft 1
+				0 ActiveHinge FrontKneeLeft 3				
+					0 FixedBrick FrontLowerLegLeft 0	
+		1 ActiveHinge HipFrontRight 1
+				0 ActiveHinge FrontKneeRight 3				
+					0 FixedBrick FrontLowerLegRight 0
+	2 FixedBrick Back 1
+		2 ActiveHinge HipBackRight 1 
+				0 ActiveHinge BackKneeRight 3 
+					0 FixedBrick BackLowerLegRight 0
+		1 ActiveHinge HipBackLeft 1
+				0 ActiveHinge BackKneeLeft 3
+					0 FixedBrick BackLowerLegLeft 0
+
+
+
+
