@@ -7,7 +7,7 @@ mu = 10
 lambda = 10
 replacement = plus
 selection = deterministic-tournament
-tournamentSize = 10
+tournamentSize = 5
 
 #Commonly used brain parameters
 pBrainMutate = .2
@@ -19,6 +19,13 @@ pOscillatorNeuron = 0
 numInitialParts = 2:10
 addBodyPart = all
 maxBodyParts = 20
-socket=127.0.0.1:49152
+socket=127.0.0.1:8001
+socket=127.0.0.1:8002
+socket=127.0.0.1:8003
+socket=127.0.0.1:8004
+socket=127.0.0.1:8005
+socket=127.0.0.1:8006
+socket=127.0.0.1:8007
+socket=127.0.0.1:8008
 brainBounds=-3:3
 brainSigma=.7
