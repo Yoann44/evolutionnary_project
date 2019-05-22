@@ -1,17 +1,17 @@
-referenceRobotFile=robot3_articulationsInversees.robot.txt
+referenceRobotFile=robot2_sansbrique.robot.txt
 
 simulatorConfFile=conf.sim.txt
 evolutionMode = brain
 numGenerations = 100
-mu = 10
-lambda = 10
+mu = 15
+lambda = 15
 replacement = plus
 selection = deterministic-tournament
-tournamentSize = 10
+tournamentSize = 9
 
 #Commonly used brain parameters
-pBrainMutate = .2
-pBrainCrossover = .2
+pBrainMutate = .3
+pBrainCrossover = .3
 pAddHiddenNeuron = 0
 pOscillatorNeuron = 0
 

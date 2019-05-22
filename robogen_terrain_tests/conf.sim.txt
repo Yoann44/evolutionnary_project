@@ -16,4 +16,4 @@ terrainFriction=1.0
 sensorNoiseLevel=0.0
 motorNoiseLevel=0.0
 capAcceleration=false
-obstaclesConfigFile=terrain_4.obs
+obstaclesConfigFile=terrain_5.obs
