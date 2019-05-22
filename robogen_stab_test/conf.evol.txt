@@ -1,0 +1,27 @@
+referenceRobotFile=robot2_sansbrique.robot.txt
+
+simulatorConfFile=conf.sim.txt
+evolutionMode = full
+numGenerations = 60
+mu = 10
+lambda = 25
+replacement = plus
+selection = deterministic-tournament
+tournamentSize = 2
+
+#Commonly used brain parameters
+pBrainMutate = 0.45
+pBrainCrossover = 0
+pAddHiddenNeuron = 0.2
+pOscillatorNeuron = 0
+
+#Commonly used body variation parameters
+numInitialParts = 2:10
+addBodyPart = All
+maxBodyParts = 20
+socket=127.0.0.1:49152
+brainBounds=-3:3
+brainSigma=.7
+
+#Other parameters
+evolutionaryAlgorithm=Basic
