@@ -1,0 +1,11 @@
+0 CoreComponent Core 0
+	2 ActiveHinge ArticulationArriere 1
+		0 FixedBrick BriqueArriere 2
+	1 ActiveHinge ArticulationDroite 1
+		0 FixedBrick BriqueDroite 2
+	0 ActiveHinge ArticulationGauche 1
+		0 FixedBrick BriqueGauche 2
+
+
+
+
