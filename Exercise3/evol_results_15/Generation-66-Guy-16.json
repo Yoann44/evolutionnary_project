@@ -1,0 +1,352 @@
+{
+ "id": 1,
+ "body": {
+  "part": [
+   {
+    "id": "Core",
+    "type": "CoreComponent",
+    "root": true,
+    "orientation": 0
+   },
+   {
+    "id": "Back",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 1
+   },
+   {
+    "id": "Front",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 1
+   },
+   {
+    "id": "Front2",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 3
+   },
+   {
+    "id": "HipFrontRight",
+    "type": "ActiveHinge",
+    "root": false,
+    "orientation": 2
+   },
+   {
+    "id": "myid1002",
+    "type": "ParametricJoint",
+    "root": false,
+    "evolvableParam": [
+     {
+      "paramValue": 0.06731695681810379
+     },
+     {
+      "paramValue": -31.732120513916016
+     },
+     {
+      "paramValue": 0.0
+     }
+    ],
+    "orientation": 0
+   },
+   {
+    "id": "FrontUpperLegRight",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 1
+   },
+   {
+    "id": "FrontKneeRight",
+    "type": "ActiveHinge",
+    "root": false,
+    "orientation": 2
+   },
+   {
+    "id": "FrontLowerLegRight",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 1
+   },
+   {
+    "id": "myid1005",
+    "type": "ActiveHinge",
+    "root": false,
+    "orientation": 3
+   },
+   {
+    "id": "HipFrontLeft",
+    "type": "ActiveHinge",
+    "root": false,
+    "orientation": 2
+   },
+   {
+    "id": "FrontUpperLegLeft",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 2
+   },
+   {
+    "id": "FrontLowerLegLeft",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 3
+   },
+   {
+    "id": "myid1003",
+    "type": "ActiveHinge",
+    "root": false,
+    "orientation": 2
+   },
+   {
+    "id": "myid1004",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 1
+   }
+  ],
+  "connection": [
+   {
+    "src": "Core",
+    "dest": "Back",
+    "srcSlot": 2,
+    "destSlot": 0
+   },
+   {
+    "src": "Core",
+    "dest": "Front",
+    "srcSlot": 3,
+    "destSlot": 0
+   },
+   {
+    "src": "Front",
+    "dest": "Front2",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "Front2",
+    "dest": "HipFrontRight",
+    "srcSlot": 2,
+    "destSlot": 0
+   },
+   {
+    "src": "HipFrontRight",
+    "dest": "myid1002",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "myid1002",
+    "dest": "FrontUpperLegRight",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "FrontUpperLegRight",
+    "dest": "FrontKneeRight",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "FrontKneeRight",
+    "dest": "FrontLowerLegRight",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "FrontUpperLegRight",
+    "dest": "myid1005",
+    "srcSlot": 3,
+    "destSlot": 0
+   },
+   {
+    "src": "Front2",
+    "dest": "HipFrontLeft",
+    "srcSlot": 3,
+    "destSlot": 0
+   },
+   {
+    "src": "HipFrontLeft",
+    "dest": "FrontUpperLegLeft",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "FrontUpperLegLeft",
+    "dest": "FrontLowerLegLeft",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "FrontLowerLegLeft",
+    "dest": "myid1003",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "myid1003",
+    "dest": "myid1004",
+    "srcSlot": 1,
+    "destSlot": 0
+   }
+  ]
+ },
+ "brain": {
+  "neuron": [
+   {
+    "id": "Core-0",
+    "layer": "input",
+    "type": "simple",
+    "bodyPartId": "Core",
+    "ioId": 0,
+    "gain": 1.0
+   },
+   {
+    "id": "Core-1",
+    "layer": "input",
+    "type": "simple",
+    "bodyPartId": "Core",
+    "ioId": 1,
+    "gain": 1.0
+   },
+   {
+    "id": "Core-2",
+    "layer": "input",
+    "type": "simple",
+    "bodyPartId": "Core",
+    "ioId": 2,
+    "gain": 1.0
+   },
+   {
+    "id": "Core-3",
+    "layer": "input",
+    "type": "simple",
+    "bodyPartId": "Core",
+    "ioId": 3,
+    "gain": 1.0
+   },
+   {
+    "id": "Core-4",
+    "layer": "input",
+    "type": "simple",
+    "bodyPartId": "Core",
+    "ioId": 4,
+    "gain": 1.0
+   },
+   {
+    "id": "Core-5",
+    "layer": "input",
+    "type": "simple",
+    "bodyPartId": "Core",
+    "ioId": 5,
+    "gain": 1.0
+   },
+   {
+    "id": "FrontKneeRight-0",
+    "layer": "output",
+    "type": "oscillator",
+    "bodyPartId": "FrontKneeRight",
+    "ioId": 0,
+    "phaseOffset": -0.90965765714645386,
+    "period": 1.8692835569381714,
+    "gain": 0.93379741907119751
+   },
+   {
+    "id": "HipFrontLeft-0",
+    "layer": "output",
+    "type": "oscillator",
+    "bodyPartId": "HipFrontLeft",
+    "ioId": 0,
+    "phaseOffset": 0.19006848335266113,
+    "period": 0.60963541269302368,
+    "gain": 0.69537007808685303
+   },
+   {
+    "id": "HipFrontRight-0",
+    "layer": "output",
+    "type": "oscillator",
+    "bodyPartId": "HipFrontRight",
+    "ioId": 0,
+    "phaseOffset": 0.21671293675899506,
+    "period": 1.863018274307251,
+    "gain": 1.0
+   },
+   {
+    "id": "myid1003-0",
+    "layer": "output",
+    "type": "oscillator",
+    "bodyPartId": "myid1003",
+    "ioId": 0,
+    "phaseOffset": -0.027672555297613144,
+    "period": 0.0,
+    "gain": 1.0
+   },
+   {
+    "id": "myid1005-0",
+    "layer": "output",
+    "type": "sigmoid",
+    "bias": -0.18296989798545837,
+    "bodyPartId": "myid1005",
+    "ioId": 0,
+    "gain": 1.0
+   }
+  ],
+  "connection": [
+   {
+    "src": "Core-0",
+    "dest": "myid1005-0",
+    "weight": 0.0
+   },
+   {
+    "src": "Core-1",
+    "dest": "myid1005-0",
+    "weight": 0.0
+   },
+   {
+    "src": "Core-2",
+    "dest": "myid1005-0",
+    "weight": -0.069427408277988434
+   },
+   {
+    "src": "Core-3",
+    "dest": "myid1005-0",
+    "weight": 0.19220459461212158
+   },
+   {
+    "src": "Core-4",
+    "dest": "myid1005-0",
+    "weight": 1.2506560087203979
+   },
+   {
+    "src": "Core-5",
+    "dest": "myid1005-0",
+    "weight": 0.43918365240097046
+   },
+   {
+    "src": "FrontKneeRight-0",
+    "dest": "myid1005-0",
+    "weight": 0.0
+   },
+   {
+    "src": "HipFrontLeft-0",
+    "dest": "myid1005-0",
+    "weight": 0.0
+   },
+   {
+    "src": "HipFrontRight-0",
+    "dest": "myid1005-0",
+    "weight": 0.096683427691459656
+   },
+   {
+    "src": "myid1003-0",
+    "dest": "myid1005-0",
+    "weight": -0.20495928823947906
+   },
+   {
+    "src": "myid1005-0",
+    "dest": "myid1005-0",
+    "weight": 0.0
+   }
+  ]
+ }
+}

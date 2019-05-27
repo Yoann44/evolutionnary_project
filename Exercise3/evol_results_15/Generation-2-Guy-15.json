@@ -1,0 +1,227 @@
+{
+ "id": 1,
+ "body": {
+  "part": [
+   {
+    "id": "Core",
+    "type": "CoreComponent",
+    "root": true,
+    "orientation": 0
+   },
+   {
+    "id": "Back",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 1
+   },
+   {
+    "id": "Back2",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 1
+   },
+   {
+    "id": "HipBackLeft",
+    "type": "ActiveHinge",
+    "root": false,
+    "orientation": 2
+   },
+   {
+    "id": "BackUpperLegLeft",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 1
+   },
+   {
+    "id": "BackKneeLeft",
+    "type": "ActiveHinge",
+    "root": false,
+    "orientation": 2
+   },
+   {
+    "id": "BackLowerLegLeft",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 0
+   },
+   {
+    "id": "HipBackRight",
+    "type": "ActiveHinge",
+    "root": false,
+    "orientation": 2
+   },
+   {
+    "id": "BackUpperLegRight",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 1
+   },
+   {
+    "id": "BackKneeRight",
+    "type": "ActiveHinge",
+    "root": false,
+    "orientation": 2
+   },
+   {
+    "id": "BackLowerLegRight",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 0
+   }
+  ],
+  "connection": [
+   {
+    "src": "Core",
+    "dest": "Back",
+    "srcSlot": 2,
+    "destSlot": 0
+   },
+   {
+    "src": "Back",
+    "dest": "Back2",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "Back2",
+    "dest": "HipBackLeft",
+    "srcSlot": 2,
+    "destSlot": 0
+   },
+   {
+    "src": "HipBackLeft",
+    "dest": "BackUpperLegLeft",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "BackUpperLegLeft",
+    "dest": "BackKneeLeft",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "BackKneeLeft",
+    "dest": "BackLowerLegLeft",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "Back2",
+    "dest": "HipBackRight",
+    "srcSlot": 3,
+    "destSlot": 0
+   },
+   {
+    "src": "HipBackRight",
+    "dest": "BackUpperLegRight",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "BackUpperLegRight",
+    "dest": "BackKneeRight",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "BackKneeRight",
+    "dest": "BackLowerLegRight",
+    "srcSlot": 1,
+    "destSlot": 0
+   }
+  ]
+ },
+ "brain": {
+  "neuron": [
+   {
+    "id": "BackKneeLeft-0",
+    "layer": "output",
+    "type": "oscillator",
+    "bodyPartId": "BackKneeLeft",
+    "ioId": 0,
+    "phaseOffset": -0.47088131308555603,
+    "period": 1.8695844411849976,
+    "gain": 0.34246519207954407
+   },
+   {
+    "id": "BackKneeRight-0",
+    "layer": "output",
+    "type": "oscillator",
+    "bodyPartId": "BackKneeRight",
+    "ioId": 0,
+    "phaseOffset": -0.37473022937774658,
+    "period": 0.36890318989753723,
+    "gain": 0.22714690864086151
+   },
+   {
+    "id": "Core-0",
+    "layer": "input",
+    "type": "simple",
+    "bodyPartId": "Core",
+    "ioId": 0,
+    "gain": 1.0
+   },
+   {
+    "id": "Core-1",
+    "layer": "input",
+    "type": "simple",
+    "bodyPartId": "Core",
+    "ioId": 1,
+    "gain": 1.0
+   },
+   {
+    "id": "Core-2",
+    "layer": "input",
+    "type": "simple",
+    "bodyPartId": "Core",
+    "ioId": 2,
+    "gain": 1.0
+   },
+   {
+    "id": "Core-3",
+    "layer": "input",
+    "type": "simple",
+    "bodyPartId": "Core",
+    "ioId": 3,
+    "gain": 1.0
+   },
+   {
+    "id": "Core-4",
+    "layer": "input",
+    "type": "simple",
+    "bodyPartId": "Core",
+    "ioId": 4,
+    "gain": 1.0
+   },
+   {
+    "id": "Core-5",
+    "layer": "input",
+    "type": "simple",
+    "bodyPartId": "Core",
+    "ioId": 5,
+    "gain": 1.0
+   },
+   {
+    "id": "HipBackLeft-0",
+    "layer": "output",
+    "type": "oscillator",
+    "bodyPartId": "HipBackLeft",
+    "ioId": 0,
+    "phaseOffset": 0.37035572528839111,
+    "period": 1.0261470079421997,
+    "gain": 0.41730064153671265
+   },
+   {
+    "id": "HipBackRight-0",
+    "layer": "output",
+    "type": "oscillator",
+    "bodyPartId": "HipBackRight",
+    "ioId": 0,
+    "phaseOffset": -0.83806788921356201,
+    "period": 0.52950286865234375,
+    "gain": 0.65426081418991089
+   }
+  ]
+ }
+}

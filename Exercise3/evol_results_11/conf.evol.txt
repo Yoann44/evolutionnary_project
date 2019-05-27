@@ -1,0 +1,32 @@
+referenceRobotFile=robot3_articulationsInversees.robot.txt
+
+simulatorConfFile=conf.sim.txt
+evolutionMode = full
+numGenerations = 200
+mu = 20
+lambda = 20
+replacement = plus
+selection = deterministic-tournament
+tournamentSize = 3
+
+#Commonly used brain parameters
+pBrainMutate = 0.2
+pBrainCrossover = 0
+pAddHiddenNeuron = 0
+pOscillatorNeuron = 0
+
+#Commonly used body variation parameters
+numInitialParts = 2:30
+addBodyPart = all
+maxBodyParts = 30
+socket=127.0.0.1:49152
+brainBounds=-3:3
+brainSigma=.7
+
+#Other parameters
+pNodeInsert=0.05
+pSubtreeRemove=0.3
+pSubtreeDuplicate=0.05
+pSubtreeSwap=0.05
+pNodeRemove=0.3
+pParameterModify=0.3
