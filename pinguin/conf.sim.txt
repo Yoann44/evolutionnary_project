@@ -1,0 +1,20 @@
+#Fitness Function
+scenario=racing_stab_scenario.js
+
+#Time Parameters 
+simulationTime=10
+timeStep=0.02
+actuationFrequency=25
+
+#Terrain Parameters
+terrainType=flat
+terrainLength=10
+terrainWidth=10
+terrainFriction=1.0
+
+#Other Parameters
+sensorNoiseLevel=0.0
+motorNoiseLevel=0.0
+capAcceleration=false
+startPositionConfigFile=start.txt
+obstaclesConfigFile=terrain_7.obs

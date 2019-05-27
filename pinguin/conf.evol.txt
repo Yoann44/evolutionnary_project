@@ -1,0 +1,33 @@
+referenceRobotFile=mini_1.robot.txt
+
+simulatorConfFile=conf.sim.txt
+evolutionMode = full
+numGenerations = 400
+mu = 100
+lambda = 100
+replacement = plus
+selection = deterministic-tournament
+tournamentSize = 5
+
+#Commonly used brain parameters
+pBrainMutate = 0.2
+pBrainCrossover = 0
+pAddHiddenNeuron = 0.05
+pOscillatorNeuron = 0.5
+
+#Commonly used body variation parameters
+numInitialParts = 2:30
+addBodyPart = all
+maxBodyParts = 20
+socket=127.0.0.1:49152
+brainBounds=-3:3
+brainSigma=.7
+
+#Other parameters
+periodBounds=1.0:3.0
+pNodeInsert=0.05
+pSubtreeRemove=0.3
+pSubtreeDuplicate=0.05
+pSubtreeSwap=0.05
+pNodeRemove=0.3
+pParameterModify=0.3

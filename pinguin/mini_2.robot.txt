@@ -1,0 +1,17 @@
+0 CoreComponent Core 0
+	0 ActiveHinge ArticAvantGauche 1	
+		0 FixedBrick JambeAvantGauche 0
+	1 ActiveHinge ArticAvantDroite 1	
+		0 FixedBrick JambeAvantDroite 0
+	2 ActiveHinge ArticDos 2
+		0 FixedBrick BriqueDos 0 
+			1 ActiveHinge ArticArriereGauche 0
+				0 FixedBrick JambeArriereGauche 0
+			2 ActiveHinge ArticArriereDroite 0
+				0 FixedBrick JambeArriereDroite 0
+
+Core oscillator
+Core oscillator
+
+
+
