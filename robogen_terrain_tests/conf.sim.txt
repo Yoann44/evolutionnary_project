@@ -1,8 +1,8 @@
 #Fitness Function
-scenario=racing_scenario.js
+scenario=racing_stab_scenario.js
 
 #Time Parameters 
-simulationTime=8
+simulationTime=10
 timeStep=0.02
 actuationFrequency=25
 
@@ -16,4 +16,3 @@ terrainFriction=1.0
 sensorNoiseLevel=0.0
 motorNoiseLevel=0.0
 capAcceleration=false
-obstaclesConfigFile=terrain_5.obs

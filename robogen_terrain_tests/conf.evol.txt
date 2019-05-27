@@ -1,22 +1,22 @@
-referenceRobotFile=robot2_sansbrique.robot.txt
+referenceRobotFile=robot2_sb_sens.robot.txt
 
 simulatorConfFile=conf.sim.txt
 evolutionMode = brain
-numGenerations = 100
+numGenerations = 400
 mu = 15
-lambda = 15
+lambda = 30
 replacement = plus
 selection = deterministic-tournament
-tournamentSize = 9
+tournamentSize = 5
 
 #Commonly used brain parameters
-pBrainMutate = .3
-pBrainCrossover = .3
+pBrainMutate = 0.2
+pBrainCrossover = 0.1
 pAddHiddenNeuron = 0
 pOscillatorNeuron = 0
 
 #Commonly used body variation parameters
-numInitialParts = 2:10
+numInitialParts = 2:30
 addBodyPart = all
 maxBodyParts = 20
 socket=127.0.0.1:49152
